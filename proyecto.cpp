@@ -145,22 +145,23 @@ bool E4 = false;
 bool E5 = false;
 
 //Keyframes 
-//Variables de dibujo
-float	posX = -5.0f,
-posY = 10.0f,
-posZ = 0.0f,
+//Variables de dibujo 10.0f, 0.0f, -10.0f
+float	
+posX = 10.0f,
+posY = 0.0f,
+posZ = -10.0f,
 giro = 0.0f,
 
-//VARIABLES PARA DRON
-posAX = -60.0f,
+//VARIABLES PARA DRON 28.5f, 0.0f, 5.0f
+posAX = 28.5f,
 posAY = 0.0f,//4
-posAZ = 0.0f,
-giroA = 180.0f,
+posAZ = 5.0f,
+giroA = 0.0f,
 
-//VARIABLES PARA CARRO1
-posBX = -67.0f, //3.0f
-posBY = -2.0f,
-posBZ = 18.0f,
+//VARIABLES PARA SILLAJAVI
+posBX = 28.5f, //3.0f
+posBY = 0.0f,
+posBZ = 5.0f,
 giroB = 0.0f,
 
 //VARIABLES PARA ROBOT
@@ -185,7 +186,7 @@ incZ = 0.0f,
 
 giroaveInc = 0.0f,
 giroDronInc = 0.0f,
-giroCarro1Inc = 0.0f,
+girosillajaviInc = 0.0f,
 giroCarro2Inc = 0.0f,
 incAX = 0.0f,
 incAY = 0.0f,
@@ -300,46 +301,47 @@ void interpolation5(void)
 /*posAX = -40.0f,
 posAY = 4.0f,
 posAZ = 0.0f,*/
+//28.5f, 0.0f, 5.0f
 void dronFrame(void)
 {
-	KeyFrame2[0].posX = -60.0f;
+	KeyFrame2[0].posX = 28.5f;
 	KeyFrame2[0].posY = 0.0f;
-	KeyFrame2[0].posZ = 0.0f;
+	KeyFrame2[0].posZ = 5.0f;
 	KeyFrame2[0].giro = 0.0f;
 
-	KeyFrame2[1].posX = -62.0f;
-	KeyFrame2[1].posY = 4.0f;
-	KeyFrame2[1].posZ = 3.0f;
-	KeyFrame2[1].giro = 90.0f;
+	KeyFrame2[1].posX = 28.5f;
+	KeyFrame2[1].posY = 0.0f;
+	KeyFrame2[1].posZ = 5.5f;
+	KeyFrame2[1].giro = 0.0f;
 
-	KeyFrame2[2].posX = -65.0f;
-	KeyFrame2[2].posY = 8.0f;
-	KeyFrame2[2].posZ = 5.0f;
+	KeyFrame2[2].posX = 28.5f;
+	KeyFrame2[2].posY = 0.0f;
+	KeyFrame2[2].posZ = 6.0f;
 	KeyFrame2[2].giro = 0.0f;
 
-	KeyFrame2[3].posX = -65.0f;
-	KeyFrame2[3].posY = 12.0f;
-	KeyFrame2[3].posZ = 8.0f;
+	KeyFrame2[3].posX = 28.5f;
+	KeyFrame2[3].posY = 0.0f;
+	KeyFrame2[3].posZ = 6.5f;
 	KeyFrame2[3].giro = 0.0f;
 
-	KeyFrame2[4].posX = -65.0f;
-	KeyFrame2[4].posY = 12.0f;
-	KeyFrame2[4].posZ = 8.0f;
+	KeyFrame2[4].posX = 28.5f;
+	KeyFrame2[4].posY = 0.0f;
+	KeyFrame2[4].posZ = 6.0f;
 	KeyFrame2[4].giro = 0.0f;
 
-	KeyFrame2[5].posX = -62.0f;
-	KeyFrame2[5].posY = 12.0f;
-	KeyFrame2[5].posZ = 8.0f;
+	KeyFrame2[5].posX = 28.5f;
+	KeyFrame2[5].posY = 0.0f;
+	KeyFrame2[5].posZ = 5.5f;
 	KeyFrame2[5].giro = 0.0f;
 
-	KeyFrame2[6].posX = -60.0f;
-	KeyFrame2[6].posY = 12.0f;
+	KeyFrame2[6].posX = 28.5f;
+	KeyFrame2[6].posY = 0.0f;
 	KeyFrame2[6].posZ = 5.0f;
 	KeyFrame2[6].giro = 0.0f;
 
-	KeyFrame2[5].posX = -60.0f;
-	KeyFrame2[5].posY = 10.0f;
-	KeyFrame2[5].posZ = 3.0f;
+	KeyFrame2[5].posX = 28.5f;
+	KeyFrame2[5].posY = 0.0f;
+	KeyFrame2[5].posZ = 4.5f;
 	KeyFrame2[5].giro = 0.0f;
 }
 
@@ -425,37 +427,37 @@ void interpolation4(void)
 }
 
 
-
-void carro1Frame(void)
+//28.5f, 0.0f, 5.0f
+void sillajaviFrame(void)
 {
-	KeyFrame3[0].posX = -67.0f;
-	KeyFrame3[0].posY = -2.0f;
-	KeyFrame3[0].posZ = 15.0f;
+	KeyFrame3[0].posX = 28.5f;
+	KeyFrame3[0].posY = 0.0f;
+	KeyFrame3[0].posZ = 5.0f;
 	KeyFrame3[0].giro = 0.0f;
 
-	KeyFrame3[1].posX = -67.0f;
-	KeyFrame3[1].posY = -2.0f;
-	KeyFrame3[1].posZ = 11.0f;
+	KeyFrame3[1].posX = 28.5f;
+	KeyFrame3[1].posY = 0.0f;
+	KeyFrame3[1].posZ = 5.5f;
 	KeyFrame3[1].giro = 0.0f;
 
-	KeyFrame3[2].posX = -67.0f;
-	KeyFrame3[2].posY = -2.0f;
-	KeyFrame3[2].posZ = 9.0f;
+	KeyFrame3[2].posX = 28.5f;
+	KeyFrame3[2].posY = 0.0f;
+	KeyFrame3[2].posZ = 6.0f;
 	KeyFrame3[2].giro = 0.0f;
 
-	KeyFrame3[3].posX = -67.0f;
-	KeyFrame3[3].posY = -2.0f;
-	KeyFrame3[3].posZ = 7.0f;
+	KeyFrame3[3].posX = 28.5f;
+	KeyFrame3[3].posY = 0.0f;
+	KeyFrame3[3].posZ = 6.5f;
 	KeyFrame3[3].giro = 0.0f;
 
-	KeyFrame3[4].posX = -67.0f;
-	KeyFrame3[4].posY = -2.0f;
-	KeyFrame3[4].posZ = 5.0f;
+	KeyFrame3[4].posX = 28.5f;
+	KeyFrame3[4].posY = 0.0f;
+	KeyFrame3[4].posZ = 7.0f;
 	KeyFrame3[4].giro = 0.0f;
 
-	KeyFrame3[5].posX = -67.0f;
-	KeyFrame3[5].posY = -2.0f;
-	KeyFrame3[5].posZ = 4.5f;
+	KeyFrame3[5].posX = 28.5f;
+	KeyFrame3[5].posY = 0.0f;
+	KeyFrame3[5].posZ = 7.5f;
 	KeyFrame3[5].giro = 0.0f;
 
 }
@@ -474,38 +476,38 @@ void interpolation3(void)
 	incBX = (KeyFrame3[playIndex + 1].posX - KeyFrame3[playIndex].posX) / i_max_steps;
 	incBY = (KeyFrame3[playIndex + 1].posY - KeyFrame3[playIndex].posY) / i_max_steps;
 	incBZ = (KeyFrame3[playIndex + 1].posZ - KeyFrame3[playIndex].posZ) / i_max_steps;
-	giroCarro1Inc = (KeyFrame3[playIndex + 1].giro - KeyFrame3[playIndex].giro) / i_max_steps;
+	girosillajaviInc = (KeyFrame3[playIndex + 1].giro - KeyFrame3[playIndex].giro) / i_max_steps;
 }
-void aveFrame(void) {
-	KeyFrame[0].posX = -40.0f;
-	KeyFrame[0].posY = 10.0f;
-	KeyFrame[0].posZ = 0.0f;
-	KeyFrame[0].giro = -20.0f;
+void aveFrame(void) { //10.0f, 0.0f, -10.0f
+	KeyFrame[0].posX = 10.0f;
+	KeyFrame[0].posY = 0.0f;
+	KeyFrame[0].posZ = -10.0f;
+	KeyFrame[0].giro = 0.0f;
 
-	KeyFrame[1].posX = -60.0f;
-	KeyFrame[1].posY = 10.0f;
-	KeyFrame[1].posZ = 0.0f;
-	KeyFrame[1].giro = 10.0f;
+	KeyFrame[1].posX = 10.5f;
+	KeyFrame[1].posY = 0.0f;
+	KeyFrame[1].posZ = -10.0f;
+	KeyFrame[1].giro = 0.0f;
 
-	KeyFrame[2].posX = -65.0f;
-	KeyFrame[2].posY = 10.0f;
-	KeyFrame[2].posZ = 15.0f;
-	KeyFrame[2].giro = -20.0f;
+	KeyFrame[2].posX = 11.0f;
+	KeyFrame[2].posY = 0.0f;
+	KeyFrame[2].posZ = -10.0f;
+	KeyFrame[2].giro = 0.0f;
 
-	KeyFrame[3].posX = -40.0f;
-	KeyFrame[3].posY = 10.0f;
-	KeyFrame[3].posZ = 0.0f;
-	KeyFrame[3].giro = 10.0f;
+	KeyFrame[3].posX = 11.5f;
+	KeyFrame[3].posY = 0.0f;
+	KeyFrame[3].posZ = -10.0f;
+	KeyFrame[3].giro = 0.0f;
 
-	KeyFrame[4].posX = -50.0f;
-	KeyFrame[4].posY = 10.0f;
-	KeyFrame[4].posZ = 0.0f;
-	KeyFrame[4].giro = -20.0f;
+	KeyFrame[4].posX = 12.0f;
+	KeyFrame[4].posY = 0.0f;
+	KeyFrame[4].posZ = -10.0f;
+	KeyFrame[4].giro = 0.0f;
 
-	KeyFrame[5].posX = -55.0f;
-	KeyFrame[5].posY = 10.0f;
-	KeyFrame[5].posZ = 0.0f;
-	KeyFrame[5].giro = 10.0f;
+	KeyFrame[5].posX = 12.5f;
+	KeyFrame[5].posY = 0.0f;
+	KeyFrame[5].posZ = -10.0f;
+	KeyFrame[5].giro = 0.0f;
 
 }
 
@@ -741,7 +743,7 @@ void animate(void)
 			posBX += incBX;
 			posBY += incBY;
 			posBZ += incBZ;
-			giroB += giroCarro1Inc;
+			giroB += girosillajaviInc;
 
 			posCX += incCX;
 			posCY += incCY;
@@ -844,7 +846,7 @@ bool flag = false;
 
 void display(Shader shader, Shader text, Model cielo, Model ave, Model alaDer, Model alaIzq, Model PieDer, Model PieIzq,
 	Model casa, Model comedor, Model alberca, Model sala, Model cocina, Model Salma, Model baño1, Model baño2, Model Javi, Model Mau, Model jardin,
-	Model cochera, Model carro1, Model dron, Model carro2, Model robot, Model BraDer, Model BraIzq)
+	Model cochera, /*Model carro1*/ Model dron, Model carro2, Model robot, Model BraDer, Model BraIzq, Model sillajavi)
 
 {
 
@@ -1120,19 +1122,20 @@ void display(Shader shader, Shader text, Model cielo, Model ave, Model alaDer, M
 
 
 	//DRON
-	model = glm::translate(glm::mat4(1.0f), glm::vec3(posAX, posAY, posAZ));
-	model = glm::scale(model, glm::vec3(0.10f, 0.10f, 0.10f));
-	tmp = model = glm::rotate(model, glm::radians(giroA), glm::vec3(0.0f, 1.0f, 0.0));
+	model = glm::translate(temporal, glm::vec3(posBX, posBY, posBZ));//27.5
+	model = glm::rotate(model, glm::radians(-180.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+	model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+	model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));
 	shader.setMat4("model", model);
 	dron.Draw(shader);
 
-	//CARRO1
-	model = glm::translate(glm::mat4(1.0f), glm::vec3(posBX, posBY, posBZ));
-	model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0));
-	temp02 = model = glm::scale(model, glm::vec3(0.10f, 0.10f, 0.10f));
-	//model = glm::rotate(model, glm::radians(-rotRodIzq), glm::vec3(1.0f, 0.0f, 0.0f));
+	//SILLA
+	model = glm::translate(temporal, glm::vec3(posBX, posBY, posBZ));//27.5
+	model = glm::rotate(model, glm::radians(-180.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+	model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+	model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));
 	shader.setMat4("model", model);
-	carro1.Draw(shader);
+	sillajavi.Draw(shader); // RECAMARA JAVI
 
 	//CARRO2
 	model = glm::translate(glm::mat4(1.0f), glm::vec3(posDX, posDY, posDZ));
@@ -1142,12 +1145,11 @@ void display(Shader shader, Shader text, Model cielo, Model ave, Model alaDer, M
 	shader.setMat4("model", model);
 	carro2.Draw(shader);
 
-
+	
 	//Ave
-	model = glm::translate(glm::mat4(1.0f), glm::vec3(posX, posY, posZ));
-	model = glm::rotate(model, glm::radians(0.0f), glm::vec3(0.0f, 1.0f, 0.0));
-	temp01 = model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));
-	//model = glm::rotate(model, glm::radians(-rotRodIzq), glm::vec3(1.0f, 0.0f, 0.0f));
+	model = glm::translate(temporal, glm::vec3(posBX, posBY, posBZ));
+	//model = glm::rotate(model, glm::radians(270.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+	model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));
 	shader.setMat4("model", model);
 	ave.Draw(shader);
 
@@ -1365,12 +1367,13 @@ int main()
 	Model cochera = ((char *)"Models/COCHERA/COCHERA.obj");
 	//Model avionModel = ((char *)"Models/avion/avion.obj");
 	Model dron = ((char *)"Models/DRON/Dron.obj");
-	Model carro1 = ((char *)"Models/CARRO1/coche1.obj");
+	//Model carro1 = ((char *)"Models/CARRO1/coche1.obj");
 	Model llanta = ((char *)"Models/Lambo/Wheel.obj");
 	Model carro2 = ((char *)"Models/CARRO2/carro2.obj");
 	Model robot = ((char *)"Models/mono/mono.obj");
 	Model BrazoDer = ((char *)"Models/mono/brazo.obj");
 	Model BrazoIzq = ((char *)"Models/mono/brazo.obj");
+	Model sillajavi = ((char *)"Models/SILLA/sillajavi.obj");
 
 	//Inicialización de KeyFrames
 
@@ -1418,7 +1421,9 @@ int main()
 		//display(modelShader, ourModel, llantasModel);
 		display(modelShader, text,  /*pisoModel*/
 			cieloModel, aveModel, alaDerModel, alaIzqModel, PieDer, PieIzq,
-			casa, comedor, alberca, sala, cocina, Salma, baño1, baño2, Javi, Mau, jardin, cochera, carro1, dron, carro2, robot, BrazoDer, BrazoIzq);// dron llantas
+			casa, comedor, alberca, sala, cocina, Salma, baño1, baño2, Javi, Mau, jardin, cochera, 
+			//carro1, 
+			dron, carro2, robot, BrazoDer, BrazoIzq, sillajavi);// dron llantas
 
 		std::cout << "Frame:" << (1 / deltaTime) << std::endl;
 
@@ -1544,7 +1549,7 @@ void my_input(GLFWwindow *window)
 		if (FrameIndex < MAX_FRAMES) {
 			aveFrame();
 			dronFrame();
-			carro1Frame();
+			sillajaviFrame();
 			robotFrame();
 			carro2Frame();
 
